@@ -8,12 +8,11 @@
     --white: #FFF;
     --black: #000;
 
-    --fuente: 'Montserrat', sans-serif;
 }
 
 * {
     box-sizing: border-box;
     margin: 0;
-    font-family: var(--fuente);
+    font-family: 'Montserrat', sans-serif;
 }
 
