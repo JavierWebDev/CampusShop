@@ -47,7 +47,7 @@ body {
 
 .navBar {
     display: flex;
-    align-items: center;
+    align-items: center;  
 }
 
 .linkNav {
@@ -92,6 +92,7 @@ body {
         position: fixed;
         clip-path: circle(0% at top left);
         top: 0;
+        z-index: 2;
     }
 
     .navBar {
@@ -125,7 +126,7 @@ body {
 /* Banner */
 
 .contBig {
-    width: 100%;
+    max-width: 100%;
     height: 670px;
     background-image: url("/img/bannerBig.jpg");
     background-repeat: no-repeat;
@@ -194,20 +195,25 @@ body {
     .pBanner {
         color: var(--black);
     }
+
+    .contBig {
+        width: 100%;
+    }
+
 }
 
 /* Productos */ 
 
 #productos {
     text-align: center;
-    margin-top: 4%;
+    margin-top: 5%;
 }
 
 .contProductos {
     display: flex;
     justify-content: space-around;
 
-    margin-top: 4%;
+    margin-top: 3%;
 }
 
 .producto {
@@ -366,6 +372,11 @@ body {
         margin: auto;
         border-radius: 0;
     }
+
+    .imgWe {
+        margin: auto;
+        max-width: 100%;
+    }
 }
 
 /* Footer */
@@ -438,3 +449,143 @@ body {
         padding: 10px;
     }
 }
+
+
+/* ************** CATEGORIAS *************** */
+
+/* Categorias */
+
+#categorias {
+    margin-top: 100px;
+
+    text-align: center;
+}
+
+.contCategorias {
+    display: grid;
+    grid-template-rows: 100% 100%;
+    gap: 50px;
+    margin: 40px;
+}
+
+.fila {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.contImgProductoCamaras, .contImgProductoCamisas, .contImgProductoCelulares, .contImgProductoPortatiles, .contImgProductoZapatos {
+    width: 400px;
+    height: 350px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-size: cover;
+    border-radius: 10px;
+    border: solid 2px var(--colorPrimario);
+
+    transition: all 0.2s ease;
+    filter: saturate(20%);
+}
+.contImgProductoCamaras {
+    background-image: url("/img/Categorias/Camaras/camara3/productoGrande.webp");
+}
+.contImgProductoCamisas {
+    background-image: url("/img/Categorias/Camisas/camisa4/productoGrande.webp");
+}
+.contImgProductoCelulares {
+    background-image: url("/img/Categorias/Celulares/celular4/productoGrande.webp");
+}
+.contImgProductoPortatiles{
+    background-image: url("/img/Categorias/Portatiles/portatil1/productoGrande.webp");
+}
+.contImgProductoZapatos {
+    background-image: url("/img/Categorias/Zapatos/zapato3/productoGrande.webp");
+}
+
+.contImgProductoCamaras:hover, .contImgProductoCamisas:hover, .contImgProductoCelulares:hover, .contImgProductoPortatiles:hover, .contImgProductoZapatos:hover {
+    transform: scale(1.1);
+
+    background-position-y: top;
+    background-size: 1.1;
+    filter: brightness(80%);
+    filter: saturate(100%);
+}
+
+@media screen and (max-width: 600px) {
+    #categorias {
+        margin-top: 100px;
+        justify-content: center;
+    }
+
+    .contCategorias {
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 50%;
+    }
+    .fila {
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+    }
+
+    .contImgProductoCamaras, .contImgProductoCamisas, .contImgProductoCelulares, .contImgProductoPortatiles, .contImgProductoZapatos{
+        width: 300px;
+        height: 200px;
+    }
+}
+
+/* ************** CATALOGOS ******************** */
+
+#contCatalogos {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 80%;
+    justify-content: center;
+}
+
+.contProductoCatalogo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.contImgCamara1 {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    justify-content: space-evenly;
+}
+
+.contImgPequeCamara1 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.imgPequeCamara1, .img2PequeCamara1 {
+    margin: auto;
+    width: 120px;
+    height: 120px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.imgPequeCamara1 {
+    background-image: url("/img/Categorias/Camaras/camara1/productoPeque.webp");
+}
+.img2PequeCamara1 {
+    background-image: url("/img/Categorias/Camaras/camara1/img2Peque.webp");
+}
+
+.contImgGrandeCamara1 {
+    width: 100%;
+    height: 400px;
+}
+
+.imgPequeCamara1:hover ~ .contImgGrandeCamara1{
+    background-image: url("/img/Categorias/Camaras/camara1/productoPeque.webp");
+}
+
+.img2PequeCamara1:hover ~ .contImgGrandeCamara1{
+    background-image: url("/img/Categorias/Camaras/camara1/img2Peque.webp");
+} 
