@@ -10,15 +10,219 @@
 
 }
 
+/* GLOBAL STYLES */
+
+
+
 * {
     box-sizing: border-box;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
 }
+h1, h2, h3 {
+    margin: 0;
+    color: var(--colorPrimario);
+}
 
+body {
+    background-color: var(--colorTerciario);
+}
+
+.imgMain {
+    max-width: 100%;
+}
 
 /* NAVEGACION Y HEADER */
+#header {
+    background-color: var(--colorCuaternario);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
 
+.navBar {
+    display: flex;
+    align-items: center;
+}
 
+.linkNav {
+    margin-left: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1.1rem;
+    padding: 10px;
+    transition: all 0.2s ease;
+}
+.linkNav:hover {
+    background-color: var(--colorSecundario);
+    color: var(--colorCuaternario);
+    border-radius: 5px;
+    padding: 10px;
+    transform: scale(1.1);
+}
 
+.iconKart {
+    margin-left: 10px;
 
+    transition: all .5s linear;
+}
+.iconKart:hover {
+    transform: rotateX(180deg);  
+}
+.navResponsive {
+    visibility: hidden;
+}
+
+@media screen and (max-width: 600px) {
+    #header {
+        flex-direction: row;
+    }
+
+    .navResponsive {
+        visibility: visible;
+    }
+
+    .contNav {
+        position: fixed;
+        clip-path: circle(0% at top left);
+        top: 0;
+    }
+
+    .navBar {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--colorTerciario);
+        
+    }
+
+    .contNav {
+        clip-path: circle(0% at top left);
+        background-color: var(--colorTerciario);
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        opacity: 0.9;
+    }
+
+    .contNav:target {
+        clip-path: circle(150% at top left);
+
+    }
+    .linkNav:hover {
+        background-color: var(--colorSecundario);
+        color: var(--white);
+    }
+}
+
+/* ************* INDEX ***************** */
+
+/* Banner */
+
+.separador {
+    width: 100%;
+    height: 40px;
+    background-color: var(--colorSecundario);
+}
+
+#banner {
+    background-color: var(--colorCuaternario);
+    padding: 1%;
+    width: 80%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+}
+
+.logoBanner {
+    max-width: 100%;
+}
+
+.contTxt {
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    height: min-content;
+
+    background-color: var(--white);
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    #banner {
+        margin: 0;
+        width: 100%;
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr;
+
+        align-items: center;
+    }
+
+    .contTxt {
+        margin: auto;
+        width: 100%;
+
+        border-radius: 0;
+    }
+}
+
+/* Productos */ 
+
+#productos {
+    text-align: center;
+    margin-top: 4%;
+}
+
+.contProductos {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.producto {
+    background-color: var(--colorCuaternario);
+    padding: 40px;
+}
+
+.contImgProducto1 {
+    width: 300px;
+    height: 250px;
+    background-image: url("../img/Categorias/Celulares/celular1/productoGrande.webp");
+    background-repeat: no-repeat;
+    background-position-y: top;
+    background-size: cover;
+
+    transition: all 0.2s ease;
+}
+
+.contImgProducto2 {
+    width: 300px;
+    height: 250px;
+    background-image: url("../img/Categorias/Camisas/camisa2/productoGrande.webp");
+    background-repeat: no-repeat;
+    background-position-y: top;
+    background-size: cover;
+
+    transition: all 0.2s ease;
+}
+
+.contImgProducto3 {
+    width: 300px;
+    height: 250px;
+    background-image: url("../img/Categorias/Camaras/camara2/productoGrande.webp");
+    background-repeat: no-repeat;
+    background-position-y: top;
+    background-size: cover;
+
+    transition: all 0.2s ease;
+}
+.contImgProducto1:hover, .contImgProducto2:hover, .contImgProducto3:hover {
+    transform: scale(1.1);
+
+    background-position-y: center;
+    background-size: 1.1;
+}
