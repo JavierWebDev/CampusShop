@@ -128,7 +128,7 @@ body {
 .contBig {
     max-width: 100%;
     height: 790px;
-    background-image: url("/img/bannerBig.jpg");
+    background-image: url("/CampusShop/img/bannerBig.jpg");
     background-repeat: no-repeat;
     background-position: top;
     background-size:cover;
@@ -244,15 +244,15 @@ body {
 }
 
 .contImgProducto1 {
-    background-image: url("../img/Categorias/Portatiles/portatil1/productoGrande.webp");
+    background-image: url("/CampusShop/img/Categorias/Portatiles/portatil1/productoGrande.webp");
 }
 
 .contImgProducto2 {
-    background-image: url("../img/Categorias/Camisas/camisa2/productoGrande.webp");
+    background-image: url("/CampusShop/img/Categorias/Camisas/camisa2/productoGrande.webp");
 }
 
 .contImgProducto3 {
-    background-image: url("../img/Categorias/Camaras/camara2/productoGrande.webp");
+    background-image: url("/CampusShop/img/Categorias/Camaras/camara2/productoGrande.webp");
 }
 .contImgProducto1:hover, .contImgProducto2:hover, .contImgProducto3:hover {
     transform: scale(1.1);
@@ -489,19 +489,19 @@ body {
     filter: saturate(20%);
 }
 .contImgProductoCamaras {
-    background-image: url("/img/Categorias/Camaras/camara3/productoGrande.webp");
+    background-image: url("/CampusShop/img/Categorias/Camaras/camara3/productoGrande.webp");
 }
 .contImgProductoCamisas {
-    background-image: url("/img/Categorias/Camisas/camisa4/productoGrande.webp");
+    background-image: url("/CampusShop/img/Categorias/Camisas/camisa4/productoGrande.webp");
 }
 .contImgProductoCelulares {
-    background-image: url("/img/Categorias/Celulares/celular4/productoGrande.webp");
+    background-image: url("/CampusShop/img/Categorias/Celulares/celular4/productoGrande.webp");
 }
 .contImgProductoPortatiles{
-    background-image: url("/img/Categorias/Portatiles/portatil1/productoGrande.webp");
+    background-image: url("/CampusShop/img/Categorias/Portatiles/portatil1/productoGrande.webp");
 }
 .contImgProductoZapatos {
-    background-image: url("/img/Categorias/Zapatos/zapato3/productoGrande.webp");
+    background-image: url("/CampusShop/img/Categorias/Zapatos/zapato3/productoGrande.webp");
 }
 
 .contImgProductoCamaras:hover, .contImgProductoCamisas:hover, .contImgProductoCelulares:hover, .contImgProductoPortatiles:hover, .contImgProductoZapatos:hover {
@@ -604,10 +604,10 @@ body {
 }
 
 .imgPequeCamara1 {
-    background-image: url("/img/Categorias/Camaras/camara1/productoPeque.webp");
+    background-image: url("/CampusShop/img/Categorias/Camaras/camara1/productoPeque.webp");
 }
 .img2PequeCamara1 {
-    background-image: url("/img/Categorias/Camaras/camara1/img2Peque.webp");
+    background-image: url("/CampusShop/img/Categorias/Camaras/camara1/img2Peque.webp");
 }
 
 .contImgGrandeCamara1 {
@@ -615,13 +615,13 @@ body {
     height: 376px;
     grid-column: 2 / 2;
     grid-row: 1 / span 2;
-    background-image: url("/img/Categorias/Camaras/camara1/productoGrande.webp");
+    background-image: url("/CampusShop/img/Categorias/Camaras/camara1/productoGrande.webp");
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .imgPequeCamara1:hover ~ .contImgGrandeCamara1{
-    background-image: url("/img/Categorias/Camaras/camara1/productoGrande.webp");
+    background-image: url("/CampusShop/img/Categorias/Camaras/camara1/productoGrande.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -629,7 +629,7 @@ body {
 }
 
 .img2PequeCamara1:hover ~ .contImgGrandeCamara1{
-    background-image: url("/img/Categorias/Camaras/camara1/img2Grande.webp");
+    background-image: url("/CampusShop/img/Categorias/Camaras/camara1/img2Grande.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -648,10 +648,10 @@ body {
 }
 
 .imgPequeCamara2 {
-    background-image: url("/img/Categorias/Camaras/camara2/productoPeque.webp");
+    background-image: url("/CampusShop/img/Categorias/Camaras/camara2/productoPeque.webp");
 }
 .img2PequeCamara2 {
-    background-image: url("/img/Categorias/Camaras/camara2/img2Peque.webp");
+    background-image: url("/CampusShop/img/Categorias/Camaras/camara2/img2Peque.webp");
 }
 
 .contImgGrandeCamara2 {
@@ -659,20 +659,20 @@ body {
     height: 420px;
     grid-column: 2 / 2;
     grid-row: 1 / span 2;
-    background-image: url("/img/Categorias/Camaras/camara2/productoGrande.webp");
+    background-image: url("/CampusShop/img/Categorias/Camaras/camara2/productoGrande.webp");
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .imgPequeCamara2:hover ~ .contImgGrandeCamara2{
-    background-image: url("/img/Categorias/Camaras/camara2/productoGrande.webp");
+    background-image: url("/CampusShop/img/Categorias/Camaras/camara2/productoGrande.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 .img2PequeCamara2:hover ~ .contImgGrandeCamara2{
-    background-image: url("/img/Categorias/Camaras/camara2/img2Grande.webp");
+    background-image: url("/CampusShop/img/Categorias/Camaras/camara2/img2Grande.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -691,10 +691,10 @@ body {
 }
 
 .imgPequeCamara3 {
-    background-image: url("/img/Categorias/Camaras/camara3/productoPeque.webp");
+    background-image: url("/CampusShop/img/Categorias/Camaras/camara3/productoPeque.webp");
 }
 .img2PequeCamara3 {
-    background-image: url("/img/Categorias/Camaras/camara3/img2Peque.webp");
+    background-image: url("/CampusShop/img/Categorias/Camaras/camara3/img2Peque.webp");
 }
 
 .contImgGrandeCamara3 {
@@ -702,7 +702,7 @@ body {
     height: 448px;
     grid-column: 2 / 2;
     grid-row: 1 / span 2;
-    background-image: url("/img/Categorias/Camaras/camara3/productoGrande.webp");
+    background-image: url("/CampusShop/img/Categorias/Camaras/camara3/productoGrande.webp");
     background-repeat: no-repeat;
     background-position: center;
 
@@ -710,14 +710,14 @@ body {
 }
 
 .imgPequeCamara3:hover ~ .contImgGrandeCamara3{
-    background-image: url("/img/Categorias/Camaras/camara3/productoGrande.webp");
+    background-image: url("/CampusShop/img/Categorias/Camaras/camara3/productoGrande.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 .img2PequeCamara3:hover ~ .contImgGrandeCamara3{
-    background-image: url("/img/Categorias/Camaras/camara3/img2Grande.webp");
+    background-image: url("/CampusShop/img/Categorias/Camaras/camara3/img2Grande.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -736,10 +736,10 @@ body {
 }
 
 .imgPequeCamara4 {
-    background-image: url("/img/Categorias/Camaras/camara4/productoPeque.webp");
+    background-image: url("/CampusShop/img/Categorias/Camaras/camara4/productoPeque.webp");
 }
 .img2PequeCamara4 {
-    background-image: url("/img/Categorias/Camaras/camara4/img2Peque.webp");
+    background-image: url("/CampusShop/img/Categorias/Camaras/camara4/img2Peque.webp");
 }
 
 .contImgGrandeCamara4 {
@@ -747,21 +747,21 @@ body {
     height: 389px;
     grid-column: 2 / 2;
     grid-row: 1 / span 2;
-    background-image: url("/img/Categorias/Camaras/camara4/productoGrande.webp");
+    background-image: url("/CampusShop/img/Categorias/Camaras/camara4/productoGrande.webp");
     background-repeat: no-repeat;
     background-position: center;
 
 }
 
 .imgPequeCamara4:hover ~ .contImgGrandeCamara4{
-    background-image: url("/img/Categorias/Camaras/Camara4/productoGrande.webp");
+    background-image: url("/CampusShop/img/Categorias/Camaras/Camara4/productoGrande.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 .img2PequeCamara4:hover ~ .contImgGrandeCamara4{
-    background-image: url("/img/Categorias/Camaras/camara4/img2Grande.webp");
+    background-image: url("/CampusShop/img/Categorias/Camaras/camara4/img2Grande.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -788,10 +788,10 @@ body {
 }
 
 .imgPequeCamisa1 {
-    background-image: url("/img/Categorias/Camisas/camisa1/productoPeque.webp");
+    background-image: url("/CampusShop/img/Categorias/Camisas/camisa1/productoPeque.webp");
 }
 .img2PequeCamisa1 {
-    background-image: url("/img/Categorias/Camisas/camisa1/img2Peque.webp");
+    background-image: url("/CampusShop/img/Categorias/Camisas/camisa1/img2Peque.webp");
 }
 
 .contImgGrandeCamisa1 {
@@ -799,13 +799,13 @@ body {
     height: 500px;
     grid-column: 2 / 2;
     grid-row: 1 / span 2;
-    background-image: url("/img/Categorias/Camisas/camisa1/productoGrande.webp");
+    background-image: url("/CampusShop/img/Categorias/Camisas/camisa1/productoGrande.webp");
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .imgPequeCamisa1:hover ~ .contImgGrandeCamisa1{
-    background-image: url("/img/Categorias/Camisas/camisa1/productoGrande.webp");
+    background-image: url("/CampusShop/img/Categorias/Camisas/camisa1/productoGrande.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -825,10 +825,10 @@ body {
 }
 
 .imgPequeCamisa2 {
-    background-image: url("/img/Categorias/Camisas/camisa2/productoPeque.webp");
+    background-image: url("/CampusShop/img/Categorias/Camisas/camisa2/productoPeque.webp");
 }
 .img2PequeCamisa2 {
-    background-image: url("/img/Categorias/Camisas/camisa2/img2Peque.webp");
+    background-image: url("/CampusShop/img/Categorias/Camisas/camisa2/img2Peque.webp");
 }
 
 .contImgGrandeCamisa2 {
@@ -836,20 +836,20 @@ body {
     height: 500px;
     grid-column: 2 / 2;
     grid-row: 1 / span 2;
-    background-image: url("/img/Categorias/Camisas/camisa2/productoGrande.webp");
+    background-image: url("/CampusShop/img/Categorias/Camisas/camisa2/productoGrande.webp");
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .imgPequeCamisa2:hover ~ .contImgGrandeCamisa2{
-    background-image: url("/img/Categorias/Camisas/camisa2/productoGrande.webp");
+    background-image: url("/CampusShop/img/Categorias/Camisas/camisa2/productoGrande.webp");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
 }
 
 .img2PequeCamisa2:hover ~ .contImgGrandeCamisa2{
-    background-image: url("/img/Categorias/Camisas/camisa2/img2Grande.webp");
+    background-image: url("/CampusShop/img/Categorias/Camisas/camisa2/img2Grande.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -868,10 +868,10 @@ body {
 }
 
 .imgPequeCamisa3 {
-    background-image: url("/img/Categorias/Camisas/camisa3/productoPeque.webp");
+    background-image: url("/CampusShop/img/Categorias/Camisas/camisa3/productoPeque.webp");
 }
 .img2PequeCamisa3 {
-    background-image: url("/img/Categorias/Camisas/camisa3/img2Peque.webp");
+    background-image: url("/CampusShop/img/Categorias/Camisas/camisa3/img2Peque.webp");
 }
 
 .contImgGrandeCamisa3 {
@@ -879,7 +879,7 @@ body {
     height: 500px;
     grid-column: 2 / 2;
     grid-row: 1 / span 2;
-    background-image: url("/img/Categorias/Camisas/camisa3/productoGrande.webp");
+    background-image: url("/CampusShop/img/Categorias/Camisas/camisa3/productoGrande.webp");
     background-repeat: no-repeat;
     background-position: center;
 
@@ -887,14 +887,14 @@ body {
 }
 
 .imgPequeCamisa3:hover ~ .contImgGrandeCamisa3{
-    background-image: url("/img/Categorias/Camisas/camisa3/productoGrande.webp");
+    background-image: url("/CampusShop/img/Categorias/Camisas/camisa3/productoGrande.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 .img2PequeCamisa3:hover ~ .contImgGrandeCamisa3{
-    background-image: url("/img/Categorias/Camisas/camisa3/img2Grande.webp");
+    background-image: url("/CampusShop/img/Categorias/Camisas/camisa3/img2Grande.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -913,10 +913,10 @@ body {
 }
 
 .imgPequeCamisa4 {
-    background-image: url("/img/Categorias/Camisas/camisa4/productoPeque.webp");
+    background-image: url("/CampusShop/img/Categorias/Camisas/camisa4/productoPeque.webp");
 }
 .img2PequeCamisa4 {
-    background-image: url("/img/Categorias/Camisas/camisa4/img2Peque.webp");
+    background-image: url("/CampusShop/img/Categorias/Camisas/camisa4/img2Peque.webp");
 }
 
 .contImgGrandeCamisa4 {
@@ -924,21 +924,21 @@ body {
     height: 389px;
     grid-column: 2 / 2;
     grid-row: 1 / span 2;
-    background-image: url("/img/Categorias/Camisas/camisa4/productoGrande.webp");
+    background-image: url("/CampusShop/img/Categorias/Camisas/camisa4/productoGrande.webp");
     background-repeat: no-repeat;
     background-position: center;
 
 }
 
 .imgPequeCamara4:hover ~ .contImgGrandeCamisa4{
-    background-image: url("/img/Categorias/Camisas/Camisa4/productoGrande.webp");
+    background-image: url("/CampusShop/img/Categorias/Camisas/Camisa4/productoGrande.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 .img2PequeCamisa4:hover ~ .contImgGrandeCamisa4{
-    background-image: url("/img/Categorias/Camisas/camisa4/img2Grande.webp");
+    background-image: url("/CampusShop/img/Categorias/Camisas/camisa4/img2Grande.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -965,10 +965,10 @@ body {
 }
 
 .imgPequeCelular1 {
-    background-image: url("/img/Categorias/Celulares/celular1/productoPeque.webp");
+    background-image: url("/CampusShop/img/Categorias/Celulares/celular1/productoPeque.webp");
 }
 .img2PequeCelular1 {
-    background-image: url("/img/Categorias/Celulares/celular1/img2Peque.webp");
+    background-image: url("/CampusShop/img/Categorias/Celulares/celular1/img2Peque.webp");
 }
 
 .contImgGrandeCelular1 {
@@ -976,13 +976,13 @@ body {
     height: 500px;
     grid-column: 2 / 2;
     grid-row: 1 / span 2;
-    background-image: url("/img/Categorias/Celulares/celular1/productoGrande.webp");
+    background-image: url("/CampusShop/img/Categorias/Celulares/celular1/productoGrande.webp");
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .img2PequeCelular1:hover ~ .contImgGrandeCelular1{
-    background-image: url("/img/Categorias/Celulares/celular1/img2Grande.webp");
+    background-image: url("/CampusShop/img/Categorias/Celulares/celular1/img2Grande.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -1002,10 +1002,10 @@ body {
 }
 
 .imgPequeCelular2 {
-    background-image: url("/img/Categorias/Celulares/celular2/productoPeque.webp");
+    background-image: url("/CampusShop/img/Categorias/Celulares/celular2/productoPeque.webp");
 }
 .img2PequeCelular2 {
-    background-image: url("/img/Categorias/Celulares/celular2/img2Peque.webp");
+    background-image: url("/CampusShop/img/Categorias/Celulares/celular2/img2Peque.webp");
 }
 
 .contImgGrandeCelular2 {
@@ -1013,21 +1013,21 @@ body {
     height: 500px;
     grid-column: 2 / 2;
     grid-row: 1 / span 2;
-    background-image: url("/img/Categorias/Celulares/celular2/productoGrande.webp");
+    background-image: url("/CampusShop/img/Categorias/Celulares/celular2/productoGrande.webp");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
 .imgPequeCelular2:hover ~ .contImgGrandeCelular2{
-    background-image: url("/img/Categorias/Celulares/celular2/productoGrande.webp");
+    background-image: url("/CampusShop/img/Categorias/Celulares/celular2/productoGrande.webp");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
 }
 
 .img2PequeCelular2:hover ~ .contImgGrandeCelular2{
-    background-image: url("/img/Categorias/Celulares/celular2/img2Grande.webp");
+    background-image: url("/CampusShop/img/Categorias/Celulares/celular2/img2Grande.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -1046,10 +1046,10 @@ body {
 }
 
 .imgPequeCelular3 {
-    background-image: url("/img/Categorias/Celulares/celular3/productoPeque.webp");
+    background-image: url("/CampusShop/img/Categorias/Celulares/celular3/productoPeque.webp");
 }
 .img2PequeCelular3 {
-    background-image: url("/img/Categorias/Celulares/celular3/img2Peque.webp");
+    background-image: url("/CampusShop/img/Categorias/Celulares/celular3/img2Peque.webp");
 }
 
 .contImgGrandeCelular3 {
@@ -1057,7 +1057,7 @@ body {
     height: 500px;
     grid-column: 2 / 2;
     grid-row: 1 / span 2;
-    background-image: url("/img/Categorias/Celulares/celular3/productoGrande.webp");
+    background-image: url("/CampusShop/img/Categorias/Celulares/celular3/productoGrande.webp");
     background-repeat: no-repeat;
     background-position: center;
 
@@ -1065,14 +1065,14 @@ body {
 }
 
 .imgPequeCelular3:hover ~ .contImgGrandeCelular3{
-    background-image: url("/img/Categorias/Celulares/celular3/productoGrande.webp");
+    background-image: url("/CampusShop/img/Categorias/Celulares/celular3/productoGrande.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 .img2PequeCelular3:hover ~ .contImgGrandeCelular3{
-    background-image: url("/img/Categorias/Celulares/celular3/img2Grande.webp");
+    background-image: url("/CampusShop/img/Categorias/Celulares/celular3/img2Grande.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -1091,7 +1091,7 @@ body {
 }
 
 .imgPequeCelular4 {
-    background-image: url("/img/Categorias/Celulares/celular4/productoPeque.webp");
+    background-image: url("/CampusShop/img/Categorias/Celulares/celular4/productoPeque.webp");
 }
 
 .contImgGrandeCelular4 {
@@ -1099,7 +1099,7 @@ body {
     height: 389px;
     grid-column: 2 / 2;
     grid-row: 1 / span 2;
-    background-image: url("/img/Categorias/Celulares/celular4/productoGrande.webp");
+    background-image: url("/CampusShop/img/Categorias/Celulares/celular4/productoGrande.webp");
     background-repeat: no-repeat;
     background-position: center;
 
@@ -1126,10 +1126,10 @@ body {
 }
 
 .imgPequePortatil1 {
-    background-image: url("/img/Categorias/Portatiles/portatil1/productoPeque.webp");
+    background-image: url("/CampusShop/img/Categorias/Portatiles/portatil1/productoPeque.webp");
 }
 .img2PequePortatil1 {
-    background-image: url("/img/Categorias/Portatiles/portatil1/img2Peque.webp");
+    background-image: url("/CampusShop/img/Categorias/Portatiles/portatil1/img2Peque.webp");
 }
 
 .contImgGrandePortatil1 {
@@ -1137,13 +1137,13 @@ body {
     height: 500px;
     grid-column: 2 / 2;
     grid-row: 1 / span 2;
-    background-image: url("/img/Categorias/Portatiles/portatil1/productoGrande.webp");
+    background-image: url("/CampusShop/img/Categorias/Portatiles/portatil1/productoGrande.webp");
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .img2PequePortatil1:hover ~ .contImgGrandePortatil1{
-    background-image: url("/img/Categorias/Portatiles/portatil1/img2Grande.webp");
+    background-image: url("/CampusShop/img/Categorias/Portatiles/portatil1/img2Grande.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -1163,10 +1163,10 @@ body {
 }
 
 .imgPequePortatil2 {
-    background-image: url("/img/Categorias/Portatiles/portatil2/productoPeque.webp");
+    background-image: url("/CampusShop/img/Categorias/Portatiles/portatil2/productoPeque.webp");
 }
 .img2PequePortatil2 {
-    background-image: url("/img/Categorias/Portatiles/portatil2/img2Peque.webp");
+    background-image: url("/CampusShop/img/Categorias/Portatiles/portatil2/img2Peque.webp");
 }
 
 .contImgGrandePortatil2 {
@@ -1174,21 +1174,21 @@ body {
     height: 500px;
     grid-column: 2 / 2;
     grid-row: 1 / span 2;
-    background-image: url("/img/Categorias/Portatiles/portatil2/productoGrande.webp");
+    background-image: url("/CampusShop/img/Categorias/Portatiles/portatil2/productoGrande.webp");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
 .imgPequePortatil2:hover ~ .contImgGrandePortatil2{
-    background-image: url("/img/Categorias/Portatiles/portatil2/productoGrande.webp");
+    background-image: url("/CampusShop/img/Categorias/Portatiles/portatil2/productoGrande.webp");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
 }
 
 .img2PequePortatil2:hover ~ .contImgGrandePortatil2{
-    background-image: url("/img/Categorias/Portatiles/portatil2/img2Grande.webp");
+    background-image: url("/CampusShop/img/Categorias/Portatiles/portatil2/img2Grande.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -1207,10 +1207,10 @@ body {
 }
 
 .imgPequePortatil3 {
-    background-image: url("/img/Categorias/Portatiles/portatil3/productoPeque.webp");
+    background-image: url("/CampusShop/img/Categorias/Portatiles/portatil3/productoPeque.webp");
 }
 .img2PequePortatil3 {
-    background-image: url("/img/Categorias/Portatiles/portatil3/img2Peque.webp");
+    background-image: url("/CampusShop/img/Categorias/Portatiles/portatil3/img2Peque.webp");
 }
 
 .contImgGrandePortatil3 {
@@ -1218,7 +1218,7 @@ body {
     height: 500px;
     grid-column: 2 / 2;
     grid-row: 1 / span 2;
-    background-image: url("/img/Categorias/Portatiles/portatil3/productoGrande.webp");
+    background-image: url("/CampusShop/img/Categorias/Portatiles/portatil3/productoGrande.webp");
     background-repeat: no-repeat;
     background-position: center;
 
@@ -1226,14 +1226,14 @@ body {
 }
 
 .imgPequePortatil3:hover ~ .contImgGrandePortatil3{
-    background-image: url("/img/Categorias/Portatiles/portatil3/productoGrande.webp");
+    background-image: url("/CampusShop/img/Categorias/Portatiles/portatil3/productoGrande.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 .img2PequePortatil3:hover ~ .contImgGrandePortatil3{
-    background-image: url("/img/Categorias/Portatiles/portatil3/img2Grande.webp");
+    background-image: url("/CampusShop/img/Categorias/Portatiles/portatil3/img2Grande.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -1252,7 +1252,7 @@ body {
 }
 
 .imgPequePortatil4 {
-    background-image: url("/img/Categorias/Portatiles/portatil4/productoPeque.webp");
+    background-image: url("/CampusShop/img/Categorias/Portatiles/portatil4/productoPeque.webp");
 }
 
 .contImgGrandePortatil4 {
@@ -1260,7 +1260,7 @@ body {
     height: 389px;
     grid-column: 2 / 2;
     grid-row: 1 / span 2;
-    background-image: url("/img/Categorias/Portatiles/portatil4/productoGrande.webp");
+    background-image: url("/CampusShop/img/Categorias/Portatiles/portatil4/productoGrande.webp");
     background-repeat: no-repeat;
     background-position: center;
 
@@ -1287,10 +1287,10 @@ body {
 }
 
 .imgPequeZapato1 {
-    background-image: url("/img/Categorias/Zapatos/zapato1/productoPeque.webp");
+    background-image: url("/CampusShop/img/Categorias/Zapatos/zapato1/productoPeque.webp");
 }
 .img2PequeZapato1 {
-    background-image: url("/img/Categorias/Zapatos/zapato1/img2Peque.webp");
+    background-image: url("/CampusShop/img/Categorias/Zapatos/zapato1/img2Peque.webp");
 }
 
 .contImgGrandeZapato1 {
@@ -1298,13 +1298,13 @@ body {
     height: 500px;
     grid-column: 2 / 2;
     grid-row: 1 / span 2;
-    background-image: url("/img/Categorias/Zapatos/zapato1/productoGrande.webp");
+    background-image: url("/CampusShop/img/Categorias/Zapatos/zapato1/productoGrande.webp");
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .img2PequeZapato1:hover ~ .contImgGrandeZapato1{
-    background-image: url("/img/Categorias/Zapatos/zapato1/img2Grande.webp");
+    background-image: url("/CampusShop/img/Categorias/Zapatos/zapato1/img2Grande.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -1324,10 +1324,10 @@ body {
 }
 
 .imgPequeZapato2 {
-    background-image: url("/img/Categorias/Zapatos/zapato2/productoPeque.webp");
+    background-image: url("/CampusShop/img/Categorias/Zapatos/zapato2/productoPeque.webp");
 }
 .img2PequeZapato2 {
-    background-image: url("/img/Categorias/Zapatos/zapato2/img2Peque.webp");
+    background-image: url("/CampusShop/img/Categorias/Zapatos/zapato2/img2Peque.webp");
 }
 
 .contImgGrandeZapato2 {
@@ -1335,21 +1335,21 @@ body {
     height: 500px;
     grid-column: 2 / 2;
     grid-row: 1 / span 2;
-    background-image: url("/img/Categorias/Zapatos/zapato2/productoGrande.webp");
+    background-image: url("/CampusShop/img/Categorias/Zapatos/zapato2/productoGrande.webp");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
 .imgPequeZapato2:hover ~ .contImgGrandeZapato2{
-    background-image: url("/img/Categorias/Zapatos/zapato2/productoGrande.webp");
+    background-image: url("/CampusShop/img/Categorias/Zapatos/zapato2/productoGrande.webp");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
 }
 
 .img2PequeZapato2:hover ~ .contImgGrandeZapato2{
-    background-image: url("/img/Categorias/Zapatos/zapato2/img2Grande.webp");
+    background-image: url("/CampusShop/img/Categorias/Zapatos/zapato2/img2Grande.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -1368,10 +1368,10 @@ body {
 }
 
 .imgPequeZapato3 {
-    background-image: url("/img/Categorias/Zapatos/zapato3/productoPeque.webp");
+    background-image: url("/CampusShop/img/Categorias/Zapatos/zapato3/productoPeque.webp");
 }
 .img2PequeZapato3 {
-    background-image: url("/img/Categorias/Zapatos/zapato3/img2Peque.webp");
+    background-image: url("/CampusShop/img/Categorias/Zapatos/zapato3/img2Peque.webp");
 }
 
 .contImgGrandeZapato3 {
@@ -1379,7 +1379,7 @@ body {
     height: 500px;
     grid-column: 2 / 2;
     grid-row: 1 / span 2;
-    background-image: url("/img/Categorias/Zapatos/zapato3/productoGrande.webp");
+    background-image: url("/CampusShop/img/Categorias/Zapatos/zapato3/productoGrande.webp");
     background-repeat: no-repeat;
     background-position: center;
 
@@ -1387,14 +1387,14 @@ body {
 }
 
 .imgPequeZapato3:hover ~ .contImgGrandeZapato3{
-    background-image: url("/img/Categorias/Zapatos/zapato3/productoGrande.webp");
+    background-image: url("/CampusShop/img/Categorias/Zapatos/zapato3/productoGrande.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 .img2PequeZapato3:hover ~ .contImgGrandeZapato3{
-    background-image: url("/img/Categorias/Zapatos/zapato3/img2Grande.webp");
+    background-image: url("/CampusShop/img/Categorias/Zapatos/zapato3/img2Grande.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -1414,11 +1414,11 @@ body {
 
 
 .imgPequeZapato4 {
-    background-image: url("/img/Categorias/Zapatos/zapato4/productoPeque.webp");
+    background-image: url("/CampusShop/img/Categorias/Zapatos/zapato4/productoPeque.webp");
 }
 
 .img2PequeZapato4 {
-    background-image: url("/img/Categorias/Zapatos/zapato4/img2Grande.webp");
+    background-image: url("/CampusShop/img/Categorias/Zapatos/zapato4/img2Grande.webp");
 }
 
 .contImgGrandeZapato4 {
@@ -1426,13 +1426,13 @@ body {
     height: 389px;
     grid-column: 2 / 2;
     grid-row: 1 / span 2;
-    background-image: url("/img/Categorias/Zapatos/zapato4/productoGrande.webp");
+    background-image: url("/CampusShop/img/Categorias/Zapatos/zapato4/productoGrande.webp");
     background-repeat: no-repeat;
     background-position: center;    
 }
 
 .img2PequeZapato4:hover ~ .contImgGrandeZapato4{
-    background-image: url("/img/Categorias/Zapatos/zapato4/img2Grande.webp");
+    background-image: url("/CampusShop/img/Categorias/Zapatos/zapato4/img2Grande.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -1680,7 +1680,7 @@ th, td {
 }
 
 .imgCarrito1 {
-    background-image: url("/img/Categorias/Camaras/camara4/productoGrande.webp");
+    background-image: url("/CampusShop/img/Categorias/Camaras/camara4/productoGrande.webp");
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -1691,19 +1691,19 @@ th, td {
 }
 
 .imgCarrito2 {
-    background-image: url("/img/Categorias/Camisas/camisa3/productoGrande.webp");
+    background-image: url("/CampusShop/img/Categorias/Camisas/camisa3/productoGrande.webp");
     background-size: contain;
     background-repeat: no-repeat;
 }
 
 .imgCarrito3 {
-    background-image: url("/img/Categorias/Zapatos/zapato2/productoGrande.webp");
+    background-image: url("/CampusShop/img/Categorias/Zapatos/zapato2/productoGrande.webp");
     background-size: contain;
     background-repeat: no-repeat;
 }
 
 .imgCarrito4 {
-    background-image: url("/img/Categorias/Portatiles/portatil1/productoGrande.webp");
+    background-image: url("/CampusShop/img/Categorias/Portatiles/portatil1/productoGrande.webp");
     background-size: contain;
     background-repeat: no-repeat;
 }
