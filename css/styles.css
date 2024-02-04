@@ -127,10 +127,10 @@ body {
 
 .contBig {
     max-width: 100%;
-    height: 670px;
+    height: 790px;
     background-image: url("/img/bannerBig.jpg");
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top;
     background-size:cover;
 
     box-shadow: inset 0px 0px 600px 200px rgba(0,0,0,0.15);
@@ -198,6 +198,8 @@ body {
 
     .contBig {
         width: 100%;
+        background-size: cover;
+        background-position: right;
     }
 
 }
@@ -242,7 +244,7 @@ body {
 }
 
 .contImgProducto1 {
-    background-image: url("../img/Categorias/Celulares/celular1/productoGrande.webp");
+    background-image: url("../img/Categorias/Portatiles/portatil1/productoGrande.webp");
 }
 
 .contImgProducto2 {
@@ -266,7 +268,7 @@ body {
     text-align: center;
 }
 
-.btnMainPage {
+.btnObtener {
     background-color: var(--colorSecundario);
     border: solid 2px var(--colorTerciario);
     width: 80%;
@@ -276,7 +278,7 @@ body {
 
 }
 
-.btnMainPage:hover {
+.btnObtener:hover {
     animation: colorChange 2s infinite ease-in-out;
     color: var(--black);
 
@@ -463,7 +465,7 @@ body {
 
 .contCategorias {
     display: grid;
-    grid-template-rows: 100% 100%;
+    grid-template-rows: 1fr 1fr;
     gap: 50px;
     margin: 40px;
 }
@@ -536,38 +538,69 @@ body {
 /* ************** CATALOGOS ******************** */
 
 #contCatalogos {
-    margin-top: 100px;
     display: flex;
     flex-direction: column;
     gap: 50px;
     width: 80%;
     justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 100px;
 }
 
 .contProductoCatalogo {
     display: grid;
     grid-template-columns: 1fr 1fr;
-
+    gap: 20px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    background-color: var(--colorCuaternario);
+    padding: 40px;
+    border-radius: 10px;
 }
 
-.contImgCamara1 {
-    display: grid;
-    grid-template-columns: 30% 70%;
-    justify-content: space-evenly;
-}
-
-.contImgPequeCamara1 {
+.infoProducto {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 20px;
 }
 
+.precios {
+    display: flex;
+    width: 100px;
+    justify-content: space-between;
+
+}
+
+.precio {
+    font-size: 20px;
+}
+.precioTachado {
+    text-decoration: line-through;
+    color: red;
+    font-size: 15px;
+}
+
+/*************** CAMARAS **********************/
+
+.contImg{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+}
+
+/* Camara1 */
+
 .imgPequeCamara1, .img2PequeCamara1 {
-    margin: auto;
-    width: 120px;
-    height: 120px;
+    align-items: center;
+    width: 100px;
+    height: 100px;
     background-repeat: no-repeat;
     background-size: cover;
+
+    transition: all 0.1s ease-in;
 }
 
 .imgPequeCamara1 {
@@ -578,14 +611,1159 @@ body {
 }
 
 .contImgGrandeCamara1 {
-    width: 100%;
-    height: 400px;
+    width: 90%;
+    height: 376px;
+    grid-column: 2 / 2;
+    grid-row: 1 / span 2;
+    background-image: url("/img/Categorias/Camaras/camara1/productoGrande.webp");
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .imgPequeCamara1:hover ~ .contImgGrandeCamara1{
-    background-image: url("/img/Categorias/Camaras/camara1/productoPeque.webp");
+    background-image: url("/img/Categorias/Camaras/camara1/productoGrande.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
 }
 
 .img2PequeCamara1:hover ~ .contImgGrandeCamara1{
-    background-image: url("/img/Categorias/Camaras/camara1/img2Peque.webp");
+    background-image: url("/img/Categorias/Camaras/camara1/img2Grande.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 } 
+
+/* Camara 2 */
+
+.imgPequeCamara2, .img2PequeCamara2 {
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    transition: all 0.1s ease-in;
+}
+
+.imgPequeCamara2 {
+    background-image: url("/img/Categorias/Camaras/camara2/productoPeque.webp");
+}
+.img2PequeCamara2 {
+    background-image: url("/img/Categorias/Camaras/camara2/img2Peque.webp");
+}
+
+.contImgGrandeCamara2 {
+    width: 90%;
+    height: 420px;
+    grid-column: 2 / 2;
+    grid-row: 1 / span 2;
+    background-image: url("/img/Categorias/Camaras/camara2/productoGrande.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.imgPequeCamara2:hover ~ .contImgGrandeCamara2{
+    background-image: url("/img/Categorias/Camaras/camara2/productoGrande.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.img2PequeCamara2:hover ~ .contImgGrandeCamara2{
+    background-image: url("/img/Categorias/Camaras/camara2/img2Grande.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Camara 3 */
+
+.imgPequeCamara3, .img2PequeCamara3 {
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    transition: all 0.1s ease-in;
+}
+
+.imgPequeCamara3 {
+    background-image: url("/img/Categorias/Camaras/camara3/productoPeque.webp");
+}
+.img2PequeCamara3 {
+    background-image: url("/img/Categorias/Camaras/camara3/img2Peque.webp");
+}
+
+.contImgGrandeCamara3 {
+    width: 90%;
+    height: 448px;
+    grid-column: 2 / 2;
+    grid-row: 1 / span 2;
+    background-image: url("/img/Categorias/Camaras/camara3/productoGrande.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    transition: all 0.1s ease;
+}
+
+.imgPequeCamara3:hover ~ .contImgGrandeCamara3{
+    background-image: url("/img/Categorias/Camaras/camara3/productoGrande.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.img2PequeCamara3:hover ~ .contImgGrandeCamara3{
+    background-image: url("/img/Categorias/Camaras/camara3/img2Grande.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Camara 4 */
+
+.imgPequeCamara4, .img2PequeCamara4 {
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    transition: all 0.1s ease-in;
+}
+
+.imgPequeCamara4 {
+    background-image: url("/img/Categorias/Camaras/camara4/productoPeque.webp");
+}
+.img2PequeCamara4 {
+    background-image: url("/img/Categorias/Camaras/camara4/img2Peque.webp");
+}
+
+.contImgGrandeCamara4 {
+    width: 90%;
+    height: 389px;
+    grid-column: 2 / 2;
+    grid-row: 1 / span 2;
+    background-image: url("/img/Categorias/Camaras/camara4/productoGrande.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.imgPequeCamara4:hover ~ .contImgGrandeCamara4{
+    background-image: url("/img/Categorias/Camaras/Camara4/productoGrande.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.img2PequeCamara4:hover ~ .contImgGrandeCamara4{
+    background-image: url("/img/Categorias/Camaras/camara4/img2Grande.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.imgPequeCamara1:hover, .img2PequeCamara1:hover, .imgPequeCamara2:hover, .img2PequeCamara2:hover, .imgPequeCamara3:hover, .img2PequeCamara3:hover, .imgPequeCamara4:hover, .img2PequeCamara4:hover {
+    border: solid 4px var(--colorPrimario);
+
+    transform: scale(1.1);
+}
+
+/***************** CAMISAS ****************/
+
+/* Camisa 1 */
+
+.imgPequeCamisa1, .img2PequeCamisa1 {
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    transition: all 0.1s ease-in;
+}
+
+.imgPequeCamisa1 {
+    background-image: url("/img/Categorias/Camisas/camisa1/productoPeque.webp");
+}
+.img2PequeCamisa1 {
+    background-image: url("/img/Categorias/Camisas/camisa1/img2Peque.webp");
+}
+
+.contImgGrandeCamisa1 {
+    width: 90%;
+    height: 500px;
+    grid-column: 2 / 2;
+    grid-row: 1 / span 2;
+    background-image: url("/img/Categorias/Camisas/camisa1/productoGrande.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.imgPequeCamisa1:hover ~ .contImgGrandeCamisa1{
+    background-image: url("/img/Categorias/Camisas/camisa1/productoGrande.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+/* Camisa 2 */
+
+.imgPequeCamisa2, .img2PequeCamisa2 {
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    transition: all 0.1s ease-in;
+}
+
+.imgPequeCamisa2 {
+    background-image: url("/img/Categorias/Camisas/camisa2/productoPeque.webp");
+}
+.img2PequeCamisa2 {
+    background-image: url("/img/Categorias/Camisas/camisa2/img2Peque.webp");
+}
+
+.contImgGrandeCamisa2 {
+    width: 80%;
+    height: 500px;
+    grid-column: 2 / 2;
+    grid-row: 1 / span 2;
+    background-image: url("/img/Categorias/Camisas/camisa2/productoGrande.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.imgPequeCamisa2:hover ~ .contImgGrandeCamisa2{
+    background-image: url("/img/Categorias/Camisas/camisa2/productoGrande.webp");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.img2PequeCamisa2:hover ~ .contImgGrandeCamisa2{
+    background-image: url("/img/Categorias/Camisas/camisa2/img2Grande.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Camisa 3 */
+
+.imgPequeCamisa3, .img2PequeCamisa3 {
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    transition: all 0.1s ease-in;
+}
+
+.imgPequeCamisa3 {
+    background-image: url("/img/Categorias/Camisas/camisa3/productoPeque.webp");
+}
+.img2PequeCamisa3 {
+    background-image: url("/img/Categorias/Camisas/camisa3/img2Peque.webp");
+}
+
+.contImgGrandeCamisa3 {
+    width: 90%;
+    height: 500px;
+    grid-column: 2 / 2;
+    grid-row: 1 / span 2;
+    background-image: url("/img/Categorias/Camisas/camisa3/productoGrande.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    transition: all 0.1s ease;
+}
+
+.imgPequeCamisa3:hover ~ .contImgGrandeCamisa3{
+    background-image: url("/img/Categorias/Camisas/camisa3/productoGrande.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.img2PequeCamisa3:hover ~ .contImgGrandeCamisa3{
+    background-image: url("/img/Categorias/Camisas/camisa3/img2Grande.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Camisa 4 */
+
+.imgPequeCamisa4, .img2PequeCamisa4 {
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    transition: all 0.1s ease-in;
+}
+
+.imgPequeCamisa4 {
+    background-image: url("/img/Categorias/Camisas/camisa4/productoPeque.webp");
+}
+.img2PequeCamisa4 {
+    background-image: url("/img/Categorias/Camisas/camisa4/img2Peque.webp");
+}
+
+.contImgGrandeCamisa4 {
+    width: 90%;
+    height: 389px;
+    grid-column: 2 / 2;
+    grid-row: 1 / span 2;
+    background-image: url("/img/Categorias/Camisas/camisa4/productoGrande.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.imgPequeCamara4:hover ~ .contImgGrandeCamisa4{
+    background-image: url("/img/Categorias/Camisas/Camisa4/productoGrande.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.img2PequeCamisa4:hover ~ .contImgGrandeCamisa4{
+    background-image: url("/img/Categorias/Camisas/camisa4/img2Grande.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.imgPequeCamisa1:hover, .img2PequeCamisa1:hover, .imgPequeCamisa2:hover, .img2PequeCamisa2:hover, .imgPequeCamisa3:hover, .img2PequeCamisa3:hover, .imgPequeCamisa4:hover, .img2PequeCamisa4:hover {
+    border: solid 4px var(--colorPrimario);
+
+    transform: scale(1.1);
+}
+
+/****************** CELULARES **********************/
+
+/* Celular 1 */
+
+.imgPequeCelular1, .img2PequeCelular1 {
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    transition: all 0.1s ease-in;
+}
+
+.imgPequeCelular1 {
+    background-image: url("/img/Categorias/Celulares/celular1/productoPeque.webp");
+}
+.img2PequeCelular1 {
+    background-image: url("/img/Categorias/Celulares/celular1/img2Peque.webp");
+}
+
+.contImgGrandeCelular1 {
+    width: 90%;
+    height: 500px;
+    grid-column: 2 / 2;
+    grid-row: 1 / span 2;
+    background-image: url("/img/Categorias/Celulares/celular1/productoGrande.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.img2PequeCelular1:hover ~ .contImgGrandeCelular1{
+    background-image: url("/img/Categorias/Celulares/celular1/img2Grande.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+/* Celular 2 */
+
+.imgPequeCelular2, .img2PequeCelular2 {
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    transition: all 0.1s ease-in;
+}
+
+.imgPequeCelular2 {
+    background-image: url("/img/Categorias/Celulares/celular2/productoPeque.webp");
+}
+.img2PequeCelular2 {
+    background-image: url("/img/Categorias/Celulares/celular2/img2Peque.webp");
+}
+
+.contImgGrandeCelular2 {
+    width: 80%;
+    height: 500px;
+    grid-column: 2 / 2;
+    grid-row: 1 / span 2;
+    background-image: url("/img/Categorias/Celulares/celular2/productoGrande.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.imgPequeCelular2:hover ~ .contImgGrandeCelular2{
+    background-image: url("/img/Categorias/Celulares/celular2/productoGrande.webp");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.img2PequeCelular2:hover ~ .contImgGrandeCelular2{
+    background-image: url("/img/Categorias/Celulares/celular2/img2Grande.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Celular 3 */
+
+.imgPequeCelular3, .img2PequeCelular3 {
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    transition: all 0.1s ease-in;
+}
+
+.imgPequeCelular3 {
+    background-image: url("/img/Categorias/Celulares/celular3/productoPeque.webp");
+}
+.img2PequeCelular3 {
+    background-image: url("/img/Categorias/Celulares/celular3/img2Peque.webp");
+}
+
+.contImgGrandeCelular3 {
+    width: 90%;
+    height: 500px;
+    grid-column: 2 / 2;
+    grid-row: 1 / span 2;
+    background-image: url("/img/Categorias/Celulares/celular3/productoGrande.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    transition: all 0.1s ease;
+}
+
+.imgPequeCelular3:hover ~ .contImgGrandeCelular3{
+    background-image: url("/img/Categorias/Celulares/celular3/productoGrande.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.img2PequeCelular3:hover ~ .contImgGrandeCelular3{
+    background-image: url("/img/Categorias/Celulares/celular3/img2Grande.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Celular 4 */
+
+.imgPequeCelular4 {
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    transition: all 0.1s ease-in;
+}
+
+.imgPequeCelular4 {
+    background-image: url("/img/Categorias/Celulares/celular4/productoPeque.webp");
+}
+
+.contImgGrandeCelular4 {
+    width: 90%;
+    height: 389px;
+    grid-column: 2 / 2;
+    grid-row: 1 / span 2;
+    background-image: url("/img/Categorias/Celulares/celular4/productoGrande.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.imgPequeCelular1:hover, .img2PequeCelular1:hover, .imgPequeCelular2:hover, .img2PequeCelular2:hover, .imgPequeCelular3:hover, .img2PequeCelular3:hover, .imgPequeCelular4:hover, .img2PequeCelular4:hover {
+    border: solid 4px var(--colorPrimario);
+
+    transform: scale(1.1);
+}
+
+/****************** PORTATILES **********************/
+
+/* Portatil 1 */
+
+.imgPequePortatil1, .img2PequePortatil1 {
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    transition: all 0.1s ease-in;
+}
+
+.imgPequePortatil1 {
+    background-image: url("/img/Categorias/Portatiles/portatil1/productoPeque.webp");
+}
+.img2PequePortatil1 {
+    background-image: url("/img/Categorias/Portatiles/portatil1/img2Peque.webp");
+}
+
+.contImgGrandePortatil1 {
+    width: 90%;
+    height: 500px;
+    grid-column: 2 / 2;
+    grid-row: 1 / span 2;
+    background-image: url("/img/Categorias/Portatiles/portatil1/productoGrande.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.img2PequePortatil1:hover ~ .contImgGrandePortatil1{
+    background-image: url("/img/Categorias/Portatiles/portatil1/img2Grande.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+/* Portatiles 2 */
+
+.imgPequePortatil2, .img2PequePortatil2 {
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    transition: all 0.1s ease-in;
+}
+
+.imgPequePortatil2 {
+    background-image: url("/img/Categorias/Portatiles/portatil2/productoPeque.webp");
+}
+.img2PequePortatil2 {
+    background-image: url("/img/Categorias/Portatiles/portatil2/img2Peque.webp");
+}
+
+.contImgGrandePortatil2 {
+    width: 80%;
+    height: 500px;
+    grid-column: 2 / 2;
+    grid-row: 1 / span 2;
+    background-image: url("/img/Categorias/Portatiles/portatil2/productoGrande.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.imgPequePortatil2:hover ~ .contImgGrandePortatil2{
+    background-image: url("/img/Categorias/Portatiles/portatil2/productoGrande.webp");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.img2PequePortatil2:hover ~ .contImgGrandePortatil2{
+    background-image: url("/img/Categorias/Portatiles/portatil2/img2Grande.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Portatiles 3 */
+
+.imgPequePortatil3, .img2PequePortatil3 {
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    transition: all 0.1s ease-in;
+}
+
+.imgPequePortatil3 {
+    background-image: url("/img/Categorias/Portatiles/portatil3/productoPeque.webp");
+}
+.img2PequePortatil3 {
+    background-image: url("/img/Categorias/Portatiles/portatil3/img2Peque.webp");
+}
+
+.contImgGrandePortatil3 {
+    width: 90%;
+    height: 500px;
+    grid-column: 2 / 2;
+    grid-row: 1 / span 2;
+    background-image: url("/img/Categorias/Portatiles/portatil3/productoGrande.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    transition: all 0.1s ease;
+}
+
+.imgPequePortatil3:hover ~ .contImgGrandePortatil3{
+    background-image: url("/img/Categorias/Portatiles/portatil3/productoGrande.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.img2PequePortatil3:hover ~ .contImgGrandePortatil3{
+    background-image: url("/img/Categorias/Portatiles/portatil3/img2Grande.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Portatiles 4 */
+
+.imgPequePortatil4 {
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    transition: all 0.1s ease-in;
+}
+
+.imgPequePortatil4 {
+    background-image: url("/img/Categorias/Portatiles/portatil4/productoPeque.webp");
+}
+
+.contImgGrandePortatil4 {
+    width: 90%;
+    height: 389px;
+    grid-column: 2 / 2;
+    grid-row: 1 / span 2;
+    background-image: url("/img/Categorias/Portatiles/portatil4/productoGrande.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.imgPequePortatil1:hover, .img2PequePortatil1:hover, .imgPequePortatil2:hover, .img2PequePortatil2:hover, .imgPequePortatil3:hover, .img2PequePortatil3:hover, .imgPequePortatil4:hover, .img2PequePortatil4:hover {
+    border: solid 4px var(--colorPrimario);
+
+    transform: scale(1.1);
+}
+
+/****************** ZAPATOS **********************/
+
+/* Zapato 1 */
+
+.imgPequeZapato1, .img2PequeZapato1 {
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    transition: all 0.1s ease-in;
+}
+
+.imgPequeZapato1 {
+    background-image: url("/img/Categorias/Zapatos/zapato1/productoPeque.webp");
+}
+.img2PequeZapato1 {
+    background-image: url("/img/Categorias/Zapatos/zapato1/img2Peque.webp");
+}
+
+.contImgGrandeZapato1 {
+    width: 90%;
+    height: 500px;
+    grid-column: 2 / 2;
+    grid-row: 1 / span 2;
+    background-image: url("/img/Categorias/Zapatos/zapato1/productoGrande.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.img2PequeZapato1:hover ~ .contImgGrandeZapato1{
+    background-image: url("/img/Categorias/Zapatos/zapato1/img2Grande.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+/* Zapatos z */
+
+.imgPequeZapato2, .img2PequeZapato2 {
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    transition: all 0.1s ease-in;
+}
+
+.imgPequeZapato2 {
+    background-image: url("/img/Categorias/Zapatos/zapato2/productoPeque.webp");
+}
+.img2PequeZapato2 {
+    background-image: url("/img/Categorias/Zapatos/zapato2/img2Peque.webp");
+}
+
+.contImgGrandeZapato2 {
+    width: 80%;
+    height: 500px;
+    grid-column: 2 / 2;
+    grid-row: 1 / span 2;
+    background-image: url("/img/Categorias/Zapatos/zapato2/productoGrande.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.imgPequeZapato2:hover ~ .contImgGrandeZapato2{
+    background-image: url("/img/Categorias/Zapatos/zapato2/productoGrande.webp");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.img2PequeZapato2:hover ~ .contImgGrandeZapato2{
+    background-image: url("/img/Categorias/Zapatos/zapato2/img2Grande.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Zapatos z */
+
+.imgPequeZapato3, .img2PequeZapato3 {
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    transition: all 0.1s ease-in;
+}
+
+.imgPequeZapato3 {
+    background-image: url("/img/Categorias/Zapatos/zapato3/productoPeque.webp");
+}
+.img2PequeZapato3 {
+    background-image: url("/img/Categorias/Zapatos/zapato3/img2Peque.webp");
+}
+
+.contImgGrandeZapato3 {
+    width: 90%;
+    height: 500px;
+    grid-column: 2 / 2;
+    grid-row: 1 / span 2;
+    background-image: url("/img/Categorias/Zapatos/zapato3/productoGrande.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    transition: all 0.1s ease;
+}
+
+.imgPequeZapato3:hover ~ .contImgGrandeZapato3{
+    background-image: url("/img/Categorias/Zapatos/zapato3/productoGrande.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.img2PequeZapato3:hover ~ .contImgGrandeZapato3{
+    background-image: url("/img/Categorias/Zapatos/zapato3/img2Grande.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Zapatos 4 */
+
+.imgPequeZapato4, .img2PequeZapato4 {
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    transition: all 0.1s ease-in;
+}
+
+
+.imgPequeZapato4 {
+    background-image: url("/img/Categorias/Zapatos/zapato4/productoPeque.webp");
+}
+
+.img2PequeZapato4 {
+    background-image: url("/img/Categorias/Zapatos/zapato4/img2Grande.webp");
+}
+
+.contImgGrandeZapato4 {
+    width: 90%;
+    height: 389px;
+    grid-column: 2 / 2;
+    grid-row: 1 / span 2;
+    background-image: url("/img/Categorias/Zapatos/zapato4/productoGrande.webp");
+    background-repeat: no-repeat;
+    background-position: center;    
+}
+
+.img2PequeZapato4:hover ~ .contImgGrandeZapato4{
+    background-image: url("/img/Categorias/Zapatos/zapato4/img2Grande.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.imgPequeZapato1:hover, .img2PequeZapato1:hover, .imgPequeZapato2:hover, .img2PequeZapato2:hover, .imgPequeZapato3:hover, .img2PequeZapato3:hover, .imgPequeZapato4:hover, .img2PequeZapato4:hover {
+    border: solid 4px var(--colorPrimario);
+
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 600px) {
+    .contProductoCatalogo {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+}
+
+/**************** PAGINAS PRODUCTOS ********************/
+
+
+.contPagProducto {
+    margin: auto;
+    width: 90%;
+
+    background-color: var(--colorCuaternario);
+    padding: 20px;
+    padding-top: 100px;
+    padding-bottom: 70px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+#caracteristicas, #descripcion {
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--colorSecundario);
+    text-align: center;
+    flex-direction: column;
+    z-index: 3;
+
+}
+#descripcion {
+    border-top: solid 2px var(--colorCuaternario);
+    text-align: left;
+    margin-top: 0;
+}
+
+.tablaInformacion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+table {
+    border: 2px solid var(--colorTerciario);
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border: 2px solid var(--colorTerciario);
+}
+
+.infoTxt {
+    width: 60%;
+}
+
+#reviews {
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 50%;
+    background-color: var(--white);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.review {
+    border: solid 2px var(--colorSecundario);
+    margin: 10px;
+    padding: 20px;
+}
+
+.txtReview {
+    color: var(--black);
+    padding: 30px;
+}
+
+@media screen and (max-width: 600px) {
+    .contPagProducto {
+        grid-template-columns: 100%;
+    }
+
+    .contImg {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 2fr 2fr;
+    }
+
+    .btnObtener {
+        width: 100%;
+    }
+
+    #reviews{
+        width: 100%;
+        border-radius: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    /* Camaras  Responsive*/
+    
+    .contImgGrandeCamara1 {
+        grid-column: 1 / span 2;
+    }
+
+    .contImgGrandeCamara2 {
+        grid-column: 1 / span 2;
+    }
+
+    .contImgGrandeCamara3 {
+        grid-column: 1 / span 2;
+    }
+    
+    .contImgGrandeCamara4 {
+        grid-column: 1 / span 2;
+    }
+
+    /* Camisas Responsiva */
+
+    .contImgGrandeCamisa1 {
+        grid-column: 1 / span 2;
+    }
+
+    .contImgGrandeCamisa2 {
+        grid-column: 1 / span 2;
+    }
+
+    .contImgGrandeCamisa3 {
+        grid-column: 1 / span 2;
+    }
+
+    .contImgGrandeCamisa {
+        grid-column: 1 / span 2;
+    }
+
+    
+    /* Celalares Responsiva */
+    
+    .contImgGrandeCelular1 {
+        grid-column: 1 / span 2;
+    }
+
+    .contImgGrandeCelular2 {
+        grid-column: 1 / span 2;
+    }
+
+    .contImgGrandeCelular3 {
+        grid-column: 1 / span 2;
+    }
+
+    .contImgGrandeCelular4 {
+        grid-column: 1 / span 2;
+    }
+    
+    /* Portatiles Responsiva */
+
+    .contImgGrandePortatil1 {
+        grid-column: 1 / span 2;
+    }
+
+    .contImgGrandePortatil2 {
+        grid-column: 1 / span 2;
+    }
+
+    .contImgGrandePortatil3 {
+        grid-column: 1 / span 2;
+    }
+
+    .contImgGrandePortatil4 {
+        grid-column: 1 / span 2;
+    }
+
+    /* Zapatos Responsiva */
+
+    .contImgGrandeZapato1 {
+        grid-column: 1 / span 2;
+    }
+
+    .contImgGrandeZapato2 {
+        grid-column: 1 / span 2;
+    }
+
+    .contImgGrandeZapato3 {
+        grid-column: 1 / span 2;
+    }
+
+    .contImgGrandeZapato4 {
+        grid-column: 1 / span 2;
+    }
+}
+
+/******************* CARRITO ************************/
+
+.contItems {
+    width: 100%;
+    height: 300px;
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--white);
+}
+
+.itemCarrito {
+    width: 20%;
+    height: 200px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+
+    border: 2px solid var(--colorPrimario);
+
+    transition: all 0.2s ease-in;
+}
+
+.itemCarrito:hover {
+    transform: scale(1.1);
+
+    border: solid 3px var(--colorSecundario);
+} 
+
+.imgCarrito1, .imgCarrito2, .imgCarrito3, .imgCarrito4 {
+    width: 100px;
+    height: 100px;
+}
+
+.imgCarrito1 {
+    background-image: url("/img/Categorias/Camaras/camara4/productoGrande.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.tItemCarrito {
+    margin-top: 10px;
+    border-top: solid 2px var(--black);
+}
+
+.imgCarrito2 {
+    background-image: url("/img/Categorias/Camisas/camisa3/productoGrande.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.imgCarrito3 {
+    background-image: url("/img/Categorias/Zapatos/zapato2/productoGrande.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.imgCarrito4 {
+    background-image: url("/img/Categorias/Portatiles/portatil1/productoGrande.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#datos {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.formDatos {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 20px;
+    background-color: var(--colorPrimario);
+    border-radius: 10px;
+    gap: 20px;
+    justify-content: center;
+}
+
+.secForm {
+    display: flex;
+    align-items: center;
+}
+
+label {
+    width: 30%;
+    margin-top: 20px;
+    color: var(--colorCuaternario);
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+input {
+    width: 70%;
+    height: 100%;
+}
+
+@media screen and (max-width: 600px) {
+    .contItems {
+        flex-direction: column;
+        height: fit-content;
+        padding: 20px;
+        gap: 20px;
+    }
+    .itemCarrito {
+        width: 90%;
+        height: 200px;
+    }
+    .imgCarrito1, .imgCarrito2, .imgCarrito3, .imgCarrito4 {
+        width: 200px;
+        height: 150px;
+    }
+    .formDatos {
+        width: 100%;
+        border-radius: 0%;
+    }
+}
